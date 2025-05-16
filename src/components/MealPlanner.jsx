@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import foodList from '../data/dummyFoodList';
-import ReportMailButton from './ReportMailButton';
 import '../styles/MealPlanner.css';
-import { getSpreadSheetData } from '../api/api';
+
 
 export default function MealPlanner() {
   const [meals, setMeals] = useState({ breakfast: [], lunch: [], dinner: [] });
-  const [totalCalories, setTotalCalories] = useState(1800); // Varsayılan toplam kalori
+  const [totalCalories, setTotalCalories] = useState(1800); 
   const [sheetData, setSheetData] = useState(null);
 
   const calculateMealLimit = () => {
