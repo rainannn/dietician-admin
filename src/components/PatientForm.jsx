@@ -6,7 +6,7 @@ export default function PatientForm() {
   const [patient, setPatient] = useState({ name: '', age: '', height: '', weight: '' });
 
   useEffect(() => {
-    fetch("https://sheetdb.io/api/v1/slcbdmb4n0ps2") // Buraya kendi SheetDB API linkini koy
+    fetch("https://sheetdb.io/api/v1/slcbdmb4n0ps2") 
       .then(res => res.json())
       .then(data => {
         if (data.length > 0) {
