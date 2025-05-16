@@ -1,0 +1,49 @@
+.report-mail-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 16px;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.report-mail-form input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.report-mail-form input:focus {
+  outline: none;
+  border-color: #3f8efc;
+  box-shadow: 0 0 8px rgba(63, 142, 252, 0.4);
+}
+
+.report-mail-form button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgb(0 242 254 / 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.report-mail-form button:hover {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  box-shadow: 0 6px 16px rgb(0 242 254 / 0.7);
+}
+
+.report-mail-form button:active {
+  transform: scale(0.97);
+}
